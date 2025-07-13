@@ -1,107 +1,64 @@
+/* Reset */
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
-.red {
-  color: #f00;
-  font-weight: 700;
-}
-.pressStart {
-  font-family: "Press Start 2P", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-.skillset {
-  display: block;
-  width: 100%;
-  height: 350px;
-}
-.skill {
-  float: left;
-  min-width: 200px;
-  height: 200px;
-  background: #444;
-  border-radius: 16px;
-  border: 3px solid #222;
-  box-shadow: 3px 3px 7px #111;
-  text-align: center;
-  padding: 10px;
-  margin: 0 21px;
-  cursor: pointer;
-}
-.title {
-  padding: 10px 0;
-  margin: 25px 0;
-  background: #333;
-  border-radius: 8px;
-  border: 2px solid #111;
-  font-size: 1.6em;
-}
-.icon {
-  width: 64px;
-  margin: 10px;
-  padding-bottom: 7px;
-  border-bottom: 1px solid #000;
-}
+
 body {
-  font-size: 1.5em;
-  background: #444;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
 }
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
 header {
-  width: 100%;
-  height: 600px;
-  background: url('../assets/images/headerBkg.jpg');
-  background-position-y: -575px;
+  background: #4CAF50;
+  color: #fff;
+  padding: 3rem 0;
   text-align: center;
-  padding-top: 200px;
-  font-size: 2em;
-  text-shadow: 3px 3px 7px #777;
-  border-bottom: 1px solid #000;
 }
-#about {
-  width: 100%;
-  height: 900px;
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
-  #aboutLeft {
-    width: 50%;
-    height: 900px;
-    padding: 25px 50px;
-    padding-top: 50px;
-    float: left;
-    background: linear-gradient(#777, #555);
-    font-size: 1.3em;
-  }
-    #aboutLeft > p {
-      margin: 20px 0;
-    }
-    #bioPic {
-      width: 350px;
-      border-radius: 50%;
-      border: 4px solid #222;
-      box-shadow: 3px 3px 7px #111;
-      float: left;
-      margin-right: 67px;
-      margin-bottom: 50px;
-    }
-  #aboutRight {
-    width: 50%;
-    height: 900px;
-    padding: 25px 50px;
-    float: left;
-    background: linear-gradient(#ccc, #999);
-    text-align: center;
-  }
+
+.about, .features {
+  background: #f4f4f4;
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.features ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.features li {
+  background: #e2fbe2;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border-left: 5px solid #4CAF50;
+  border-radius: 5px;
+}
+
 footer {
-  width: 100%;
-  height: 100px;
+  background: #333;
+  color: #fff;
   text-align: center;
-  padding-top: 18px;
-  background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-size: .9em;
-  border-top: 1px solid #000;
+  padding: 2rem 1rem;
+}
+
+footer a {
+  color: #90ee90;
+  text-decoration: none;
 }

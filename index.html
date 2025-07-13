@@ -4,41 +4,135 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Foodies Depot</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header img {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+
+    .hero img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+
+    section {
+      padding: 3rem 1rem;
+    }
+
+    .about, .features {
+      background-color: #f8f8f8;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+
+    .about p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .features ul {
+      list-style: none;
+      margin-top: 1rem;
+      padding: 0;
+    }
+
+    .features li {
+      background: #e8ffe8;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid #4CAF50;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    footer a {
+      color: #90ee90;
+      text-decoration: none;
+    }
+
+    @media (min-width: 700px) {
+      .features ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .features li {
+        flex: 1 1 30%;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <div class="container">
-      <h1>🥦 Foodies Depot</h1>
-      <p>Your smart food distribution hub.</p>
-    </div>
+    <img src="https://via.placeholder.com/100x100.png?text=Logo" alt="Foodies Depot Logo">
+    <h1>Foodies Depot</h1>
+    <p>Your smart food distribution hub</p>
   </header>
 
-  <section class="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>Foodies Depot connects farmers, manufacturers, distributors, restaurants, and households through a transparent, smart marketplace to reduce food waste, improve logistics, and simplify food access.</p>
-    </div>
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1606788075761-223b7fd4f8b5?fit=crop&w=1200&q=80" alt="Fresh Produce">
   </section>
 
-  <section class="features">
-    <div class="container">
-      <h2>Key Features</h2>
-      <ul>
-        <li>🌾 Direct sourcing from local producers</li>
-        <li>🚚 Route optimization for deliveries</li>
-        <li>📦 Real-time surplus inventory</li>
-        <li>📊 Analytics dashboard for vendors</li>
-        <li>🛒 B2B & B2C ordering tools</li>
-      </ul>
-    </div>
+  <section class="about container">
+    <h2>About Us</h2>
+    <p>
+      Foodies Depot is a platform connecting farmers, manufacturers, distributors, restaurants, and households. 
+      We make local food distribution more efficient, reduce waste, and support food accessibility using smart logistics and direct sourcing.
+    </p>
+  </section>
+
+  <section class="features container">
+    <h2>Key Features</h2>
+    <ul>
+      <li>🌾 Direct sourcing from local producers</li>
+      <li>🚚 Route optimization for deliveries</li>
+      <li>📦 Real-time surplus inventory</li>
+      <li>📊 Vendor analytics dashboard</li>
+      <li>🛒 B2B & B2C order support</li>
+    </ul>
   </section>
 
   <footer>
-    <div class="container">
-      <p>📧 Contact us at <a href="mailto:foodiesdepot@foodiesdepot.ca">foodiesdepot@foodiesdepot.ca</a></p>
-      <p>© 2025 Foodies Depot. All rights reserved.</p>
-    </div>
+    <p>📧 Contact us at <a href="mailto:foodiesdepot@foodiesdepot.ca">foodiesdepot@foodiesdepot.ca</a></p>
+    <p>© 2025 Foodies Depot. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
